@@ -3,7 +3,28 @@
     <div class="navbar-inner">
       <a class="brand" href="{{queriesListPath}}">Site Stats</a>
       <ul class="nav">
-        <li><a href="{{querySubmitPath}}">New</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            Queries
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="{{queriesListPath}}">All Queries</a></li>
+            <li><a href="{{querySubmitPath}}">New Query</a></li>
+            <li><a href="{{queryCategoryPath}}">Query Categories</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            Calculations
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="{{calculationsListPath}}">All Calculations</a></li>
+            <li><a href="{{calculationSubmitPath}}">New Calculation</a></li>
+            <li><a href="{{calculationCategoryPath}}">Calculation Categories</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </header>

@@ -1,4 +1,5 @@
 Meteor.Router.add({
   "/": "queriesList",
-  "/submit": "querySubmit"
+  "/submit": "querySubmit",
+  "/query_categories": "queryCategoryPath"
 });
