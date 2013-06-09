@@ -4,16 +4,6 @@ Template.queriesList.helpers({
   }
 });
 
-Template.queriesList.events({
-  'click .query': function(event) {
-    event.preventDefault();
-    $elem = $(event.target).parents(".query");
-    query = Queries.findOne($elem.data("query-id"));
-
-    updateQueryValue(query);
-  }
-});
-
 function updateQueryValue(query) {
   if(queryTimers[query._id] !== undefined){
     clearTimeout(queryTimers[query._id]);

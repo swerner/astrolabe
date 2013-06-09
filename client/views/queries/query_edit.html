@@ -1,0 +1,38 @@
+<template name="queryEdit">
+{{#with queryItem}}
+<form class="main">
+  <div class="control-group">
+    <label class="control-label" for="title">Title</label>
+    <div class="controls">
+      <input name="title" type="text" class="span6" value="{{title}}" placeholder="This Query's title" />
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="query">Query</label>
+    <div class="controls">
+      <textarea name="query" class="span6" value="{{query}}" placeholder="This queries sql">{{query}}</textarea>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="categories">Categories</label>
+    <div class="controls">
+      <input name="categories" type="text" class="span6" value="{{queryCategories}}" placeholder="Categories separated by comma" />
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      <input type="submit" value="Submit" class="btn btn-primary" />
+    </div>
+  </div>
+  <hr />
+
+  <div class="control-group">
+    <div class="controls">
+      <a class="btn btn-danger delete" href="#">Delete Post</a>
+    </div>
+  </div>
+</form>
+{{/with}}
+</template>

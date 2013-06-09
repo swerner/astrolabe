@@ -13,18 +13,22 @@ Site-stats is a real-time database analytics dashboard built with [Meteor](http:
 - Automatically updates each query every minute or when a query-box on the homepage is clicked.
 
 #To Do
-- Better name, something space themed
 - Integration with external services (google analytics, clicky, kissmetrics, etc)
 - Automatically updating date range queries (ex. Number of new users today)
-- Calculations of one query with another (ex. Number of new users today / number of unique visitors)
 - View more detail of a single query (ex. Graph of the number of new users every day for a time range)
-- Grouping queries into different category pages
+- Calculations of one query with another (ex. Number of new users today / number of unique visitors)
 - Set your own time interval for your query
 - Interface for creating queries that isn't based off of SQL
 - Support for other SQL data-stores that aren't postgres
 - Support for more types of queries
-- Support for editing queries
-- Support for deleting queries
 - Better visual design
 - Use pg LISTEN/NOTIFY callbacks instead of setTimeout
+
+##In Progress
+- Grouping queries into different category pages
 - Come up with a good way to begin auto-updating on startup
+
+##Done
+- Better name, something space themed
+- Support for editing queries
+- Support for deleting queries

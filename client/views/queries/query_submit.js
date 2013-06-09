@@ -4,7 +4,8 @@ Template.querySubmit.events({
 
     var query = {
       title: $(event.target).find('[name=title]').val(),
-      query: $(event.target).find('[name=query]').val()
+      query: $(event.target).find('[name=query]').val(),
+      categories: $(event.target).find('[name=categories]').val().replace(/, /, ",").split(",")
     }
 
     Meteor.call('query', query, function(error, id){
